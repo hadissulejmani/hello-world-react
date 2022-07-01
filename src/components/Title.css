@@ -1,0 +1,14 @@
+.title-style .title {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #a9aaab;
+    padding: 10px;
+    margin: auto;
+    width: inherit;
+  }
+  
+  .title-style .subTitle {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
