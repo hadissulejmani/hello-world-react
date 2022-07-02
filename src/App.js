@@ -3,15 +3,12 @@ import React, { useState } from "react";
 import Title from "./components/Title";
 import Modal from "./components/Modal";
 import EventList from "./components/EventList";
+import NewEventForm from "./components/NewEventForm";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [showEvents, setShowEvents] = useState(true);
-  const [events, setEvents] = useState([
-    { title: "React event", id: 1 },
-    { title: "Angular event", id: 2 },
-    { title: "Vue event", id: 3 },
-  ]);
+  const [events, setEvents] = useState([]);
 
   const handleClick = (id) => {
     setEvents((prevEvents) => {
@@ -27,11 +24,22 @@ function App() {
     setShowModal(true);
   };
 
+  const addEvent = (event) => {
+    setEvents((prevEvents) => {
+      return [...prevEvents, event];
+    });
+    setShowModal(false);
+  };
+
   const titleContent = "Testing props";
 
   return (
     <div className="App">
-      <Title title={titleContent} subTitle="Subtitle" />
+      <Title
+        title={titleContent}
+        subTitle="
+            lorem ipsum dol amet lorem ipsum dolor amet lorem ipsum dolor amet lorem ipsum dolor amet lorem ipsum dolor amet lorem"
+      />
       <Title title="Testing again!!!" />
 
       {showEvents && (
@@ -47,10 +55,7 @@ function App() {
       {showEvents && <EventList events={events} handleClick={handleClick} />}
       {showModal && (
         <Modal>
-          <h1>Terms and conditions</h1>
-          <p>
-            lorem ipsum dol amet lorem ipsum dolor amet lorem ipsum dolor amet
-          </p>
+          <NewEventForm addEvent={addEvent} />
           <button onClick={handleClose}>Close</button>
         </Modal>
       )}

@@ -1,14 +1,18 @@
-.title-style .title {
+.title-block .title {
     font-size: 40px;
     font-weight: bold;
     background-color: #a9aaab;
     padding: 10px;
     margin: auto;
-    width: inherit;
+    max-width: 600px;
+    width: 100%;
   }
   
-  .title-style .subTitle {
+  .title-block .subTitle {
     font-size: 20px;
     font-weight: bold;
+    margin: auto;
+    max-width: 600px;
+    width: 100%;
   }
   
