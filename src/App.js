@@ -8,6 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Footer } from "./components/Footer/Footer";
 import Example from "./components/Example/Example";
+import NotificationPop from "./components/NotificationPop/NotificationPop";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -39,6 +40,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
+        <NotificationPop />
         <Example />
         <Footer />
       </BrowserRouter>
