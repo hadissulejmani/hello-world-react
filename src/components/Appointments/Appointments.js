@@ -16,9 +16,6 @@ const Appointments = () => {
                         <line x1="16" y1="17" x2="8" y2="17"></line>
                         <polyline points="10 9 9 9 8 9"></polyline>
                     </svg></span>
-                <p class="text-xl font-medium text-slate-700 mt-3">Best
-                    Test preparation</p>
-                <p class="mt-2 text-sm text-slate-500">Know where you stand and what next to do to succeed .</p>
             </div>
 
             <div class="p-10 flex flex-col items-center text-center group   md:lg:xl:border-b hover:bg-slate-50 cursor-pointer">
