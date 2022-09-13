@@ -20,18 +20,6 @@ const Appointments = () => {
 
             
 
-
-            <div class="p-10 flex flex-col items-center text-center group   md:lg:xl:border-r hover:bg-slate-50 cursor-pointer">
-                <span class="p-5 rounded-full bg-lime-500 text-white shadow-lg shadow-lime-200"><svg
-                        xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                    </svg></span>
-                <p class="text-xl font-medium text-slate-700 mt-3">Best
-                    Track Record</p>
-                <p class="mt-2 text-sm text-slate-500">Yet another year ! Yet another jewel in our crown!</p>
-            </div>
-
             <div class="p-10 flex flex-col items-center text-center group    md:lg:xl:border-r hover:bg-slate-50 cursor-pointer">
                 <span class="p-5 rounded-full bg-teal-500 text-white shadow-lg shadow-teal-200"><svg
                         xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
